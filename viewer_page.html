@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Color Viewer</title>
+		<link rel="stylesheet" type="text/css" href="viewer_style.css">	
+		<script type="text/javascript" src="viewer_functionality.js"></script>	
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+
+			<header>
+				<p class="title">Palette Explorer - Readability Evaluation</p>
+				<p class="theme_text">Theme:</p>
+				<select id="theme" name="theme" class="theme" onchange="themeMod(this.value)">
+					<option value="dark" >Dark</option>
+					<option value="light" >Light</option>
+				</select>
+			</header> 
+
+			<main>
+
+				<section class="texts">
+					<p class="text-title">Text to try:</p>
+					<input type="text" class="text-box" maxlength="30" onkeyup="textUpdater(this.value)" />
+					<p class="text-limit">(max. 30 characters)</p>
+				</section>
+				
+				<section class="selectors_text">
+					<input type="text" class="box-a" onkeyup="colorSticker(this.id,this.value)" id="color_1A" />
+					<input type="text" class="box-b" onkeyup="colorSticker(this.id,this.value)" id="color_2A" />
+					<input type="text" class="box-c" onkeyup="colorSticker(this.id,this.value)" id="color_3A" />
+					<input type="text" class="box-d" onkeyup="colorSticker(this.id,this.value)" id="color_4A" />
+					<input type="text" class="box-e" onkeyup="colorSticker(this.id,this.value)" id="color_5A" />
+				</section>
+				
+				<section class="selectors_color">
+					<input type="color" class="cp-a" onchange="colorSticker(this.id,this.value)" id="color_1B" />
+					<input type="color" class="cp-b" onchange="colorSticker(this.id,this.value)" id="color_2B" />
+					<input type="color" class="cp-c" onchange="colorSticker(this.id,this.value)" id="color_3B" />
+					<input type="color" class="cp-d" onchange="colorSticker(this.id,this.value)" id="color_4B" />
+					<input type="color" class="cp-e" onchange="colorSticker(this.id,this.value)" id="color_5B" />
+				</section>
+
+				<section class="displays">
+						<!-- Row 1-->
+						<p class="display column_A">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_1 column_B">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_1 column_C">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_1 column_D">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_1 column_E">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<!-- Row 2 -->
+						<p class="display row_2 column_A">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display column_B">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_2 column_C">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_2 column_D">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_2 column_E">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<!-- Row 3 -->
+						<p class="display row_3 column_A">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_3 column_B">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display column_C">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_3 column_D">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_3 column_E">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<!-- Row 4 -->
+						<p class="display row_4 column_A">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_4 column_B">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_4 column_C">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display column_D">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_4 column_E">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<!-- Row 5 -->
+						<p class="display row_5 column_A">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_5 column_B">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_5 column_C">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_5 column_D">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display column_E">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<!-- Row 6 -->
+						<p class="display row_6 white column_A">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_6 white column_B">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_6 white column_C">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_6 white column_D">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+						<p class="display row_6 white column_E">
+							This is normal text.<br /><em>This is italic text.</em><br /><strong>This is bold text.</strong>
+						</p>
+				</section>
+
+			</main>
+			
+			<footer>
+				<p class="footerbar">Created by Kaushal Rao</p>
+			</footer>
+
+		</div>
+		
+	</body>
+</html>
