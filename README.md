@@ -5,7 +5,11 @@ Simple web page to view readability of text based on color themes/palettes chose
 ## Usage
 (check Files section below for more details)
 <ol>
-  <li>Download the files into a folder and open the HTML file in your preferred browser.</li>
+  <li>Choice of usage:
+    <ul>
+      <li>Local - Download the files into a folder and open the HTML file in your preferred browser.</li>
+      <li>Hosted - a live version of this is hosted at: <a href="https://palette-readability-viewer.herokuapp.com/">https://palette-readability-viewer.herokuapp.com/</a></li>
+    </ul>
   <li>(Optional) Type the text you would like to have in the display boxes in the large text input field (max. 30 characters).</li>
   <li>Enter CSS color names or HEX values in the text input fields for each column, or select HSL or RGB values using the corresponding color-picker input field.</li>
   <li>Take a look at the result and decide which combinations work for your project.</li>
